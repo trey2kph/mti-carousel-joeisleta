@@ -1,6 +1,7 @@
-# CarouselApp
+# MTI Carousel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+I'm using Materialize CSS for carousel part and customized based on the requirement
 
 ## Development server
 
