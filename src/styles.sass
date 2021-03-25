@@ -1,2 +1,33 @@
 @import "./assets/materialize-src/sass/materialize.scss"
+
+$drop-shadow: 0 10px 22px -4px rgba(90, 90, 90, 0.5)
 /* You can add global styles to this file, and also import other style files */
+body
+  background: #f6cdcd
+
+  main
+    display: block
+    clear: both
+    background: #fff
+    padding: 100px
+    height: auto
+    margin: 50px
+    border-radius: 20px
+    box-shadow: $drop-shadow
+    @media (max-width: 620px)
+      padding: 20px
+      margin: 5px
+      h1
+        margin-bottom: 80px !important
+        text-transform: uppercase
+        font-weight: bold
+      .linkmain
+        margin-top: 80px !important
+        a
+          color: #444
+          text-decoration: underline
+          cursor: pointer
+
+footer
+  display: block
+  height: 20px

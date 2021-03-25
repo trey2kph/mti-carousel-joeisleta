@@ -29,9 +29,17 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.sass"
+              "src/styles.sass",
+              "src/assets/owl-src/css/owl.carousel.css",
+              "src/assets/owl-src/css/owl.theme.default.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/owl-src/js/owl.carousel.js",
+              "src/assets/owl-src/js/owl.navigation.js",
+              "src/assets/owl-src/js/owl.animate.js",
+              "src/assets/js/carousel.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,9 +102,12 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.sass"
+              "./src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/carousel.js"
+            ]
           }
         },
         "lint": {

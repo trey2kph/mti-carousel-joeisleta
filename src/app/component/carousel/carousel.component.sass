@@ -1,6 +1,7 @@
 $pink: #f6cdcd
 $white: #fff
-$drop-shadow: 0 10px 22px -4px rgba(180, 180, 180, 0.5)
+$drop-shadow: 0 10px 22px -5px rgba(80, 80, 80, 0.5)
+$white-gradient: linear-gradient(to bottom, #fefefe 0%, #ececec 50%)
 
 @font-face
   font-family: 'Material Icons'
@@ -24,52 +25,106 @@ $drop-shadow: 0 10px 22px -4px rgba(180, 180, 180, 0.5)
   -moz-font-feature-settings: 'liga'
   -moz-osx-font-smoothing: grayscale
 
-#carousel
-  height: calc(100vh - 80px)
-  margin-top: -24px
-  background: $pink
+.owl-carousel
+  height: 80vh
+  padding-top: 150px
+
+  .owl-stage
+    margin-top: 100px
+    height: 500px
+    padding-top: 80px
+
+  .owl-item
+    @media (max-width: 400px)
+      width: 97vw !important
+
+  .center
+    .card
+      border-bottom: 5px solid #ffbe00 !important
+
+  .card
+    display: block
+    //background: $white-gradient
+    height: 350px
+    padding: 20px
+    text-align: center
+    border-radius: 12px
+    box-shadow: $drop-shadow
+    font-size: 1.5em
+    font-weight: 600
+    line-height: 1.5em
+    img
+      width: 50%
+      margin: 50px auto 90px
+    .starthere
+      font-weight: 400
+      margin-top: 25px
+      font-size: 0.5em
+      cursor: pointer
+      outline: 0
+      border: none
+      text-transform: uppercase
+      i
+        vertical-align: text-bottom
+        font-size: 1.2em
 
 .toptext
   display: block
-  margin: 126px auto
+  margin: 155px auto 0px
   text-align: left
   width: 665px
   font-size: 2em
+  font-weight: 100
   line-height: 1.3em
+  position: absolute
+  left: 20%
+  @media (max-width: 1080px)
+    left: 18%
+  @media (max-width: 800px)
+    left: 5%
   @media (max-width: 711px)
-    margin-left: 50px
-  @media (max-width: 711px)
-    margin-top: 80px
+    margin: 50px auto
+    left: 0
+    text-align: center
+  @media (max-width: 620px)
+    width: 100%
+  .left
+    @media (max-width: 620px)
+      width: 100%
+      left: none !important
+
 
 .control
   vertical-align: bottom
   display: block
-  margin: 520px auto
+  margin: -10px auto 200px
   bottom: 19%
   text-align: center
-  width: 400px
-  .controlcircle
-    background: #333
-    width: 35px
-    height: 35px
-    padding: 5px
-    border-radius: 50%
-    a
-      color: #FFF
+  width: 712px
+  @media (max-width: 620px)
+    width: 90%
+  @media (max-width: 400px)
+    margin: -65px auto 200px
+  @media (max-width: 300px)
+    margin: 65px auto 200px
+    width: 80%
 
-.card
-  display: block
-  background: $white
-  width: 100%
-  height: 100%
-  text-align: center
-  border-radius: 12px
-  box-shadow: $drop-shadow
-  img
-    display: inline-block
-    margin-top: 50px
-  .cardtext
-    display: block
-    margin-top: 44px
-    font-size: 1.7em
-    color: #333
+  .navcontain
+    position: relative
+    z-index: 10
+    .controlcircle
+      background: #333
+      width: 35px
+      height: 35px
+      padding: 5px
+      border-radius: 50%
+      margin-bottom: 20px
+      &:hover
+        background: #ffbe00
+        a
+          color: #111
+      a
+        color: #FFF
+        cursor: pointer
+        user-select: none
+

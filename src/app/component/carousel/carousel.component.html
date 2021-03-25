@@ -1,4 +1,59 @@
-<div id="carousel">
+
+
+ <div class="carousel-fixed-item center middle-indicator toptext">
+  <div class="left">
+    What are you<br><b>here to do?</b>
+  </div>
+</div>
+
+<div class="owl-carousel">
+  <div class="card">
+    <img src="../../../assets/img/c1.png" />
+    Mobile Internet
+    <div [routerLink]="['/mobile-internet']" class="starthere">Start Here <i class="material-icons">chevron_right</i></div>
+  </div>
+  <div class="card">
+    <img src="../../../assets/img/c2.png" />
+    Home Internet
+    <div [routerLink]="['/home-internet']" class="starthere">Start Here <i class="material-icons">chevron_right</i></div>
+  </div>
+  <div class="card">
+    <img src="../../../assets/img/c3.png" />
+    Get a Device
+    <div [routerLink]="['/get-a-device']" class="starthere">Start Here <i class="material-icons">chevron_right</i></div>
+  </div>
+  <div class="card">
+    <img src="../../../assets/img/c4.png" />
+    Add a Phone Line
+    <div [routerLink]="['/add-a-phone-line']" class="starthere">Start Here <i class="material-icons">chevron_right</i></div>
+  </div>
+  <div class="card">
+    <img src="../../../assets/img/c5.png" />
+    Upgrade
+    <div [routerLink]="['/upgrade']" class="starthere">Start Here <i class="material-icons">chevron_right</i></div>
+  </div>
+</div>
+
+
+<div class="carousel-fixed-item center middle-indicator control">
+  <div class="navcontain">
+
+    <div class="left">
+      <div class="controlcircle">
+        <a class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="controlcircle" style="margin-right: -10px;">
+        <a class="moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons right middle-indicator-text" style="margin-left: 0px !important;">chevron_right</i></a>
+      </div>
+    </div>
+  </div>
+
+ </div>
+
+<!--div id="carousel">
   <div class="carousel">
 
     <a class="carousel-item" href="#one!">
@@ -38,19 +93,5 @@
       </div>
     </div>
 
-    <!--div class="carousel-fixed-item center middle-indicator control">
-      <div class="left">
-        <div class="controlcircle">
-          <a href="#carouselContainer" class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
-        </div>
-      </div>
-
-      <div class="right">
-        <div class="controlcircle" style="margin-right: -10px;">
-          <a href="#carouselContainer" class="moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons right middle-indicator-text" (click)="onNext()" style="margin-left: 0px !important;">chevron_right</i></a>
-        </div>
-      </div>
-     </!--div-->
-
   </div>
-</div>
+</div-->

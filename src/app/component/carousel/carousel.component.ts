@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Materialize from '../../../assets/materialize-src/js/bin/materialize.js';
+declare const loadCarousel: any;
 
 @Component({
   selector: 'app-carousel',
@@ -7,17 +7,15 @@ import * as Materialize from '../../../assets/materialize-src/js/bin/materialize
   styleUrls: ['./carousel.component.sass']
 })
 export class CarouselComponent implements OnInit {
-  options = {
+  /* options = {
     dist: -100,
     shift: -105,
     padding: 400,
-  };
+  }; */
 
   constructor() { }
 
   ngOnInit(): void {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = Materialize.Carousel.init(elems, this.options);
-
+    loadCarousel();
   }
 }

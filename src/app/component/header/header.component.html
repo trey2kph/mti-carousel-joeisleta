@@ -1,10 +1,10 @@
 <header>
   <div id="headcontainer">
-    <img src="../../../assets/mti_logo.png">
+    <img [routerLink]="['/']" src="../../../assets/mti_logo.png">
     <ul class="mainmenu">
-      <li>Shop</li>
-      <li>Products &amp; Services</li>
-      <li>Help &amp; Supports</li>
+      <li [routerLink]="['/shop']">Shop</li>
+      <li [routerLink]="['/product']">Products &amp; Services</li>
+      <li [routerLink]="['/help']">Help &amp; Supports</li>
     </ul>
     <div id="headside">
       <fa-icon [icon]="faSearch" size="lg"></fa-icon>
